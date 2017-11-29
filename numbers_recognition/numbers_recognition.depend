@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1511630305 source:d:\biancheng\programming\try\numbers_recognition\read.c
+	<io.h>
+	<stdio.h>
+	<string.h>
+	"a_head.h"
+
+1511674812 source:d:\biancheng\programming\try\numbers_recognition\main.c
+	<stdio.h>
+	<stdlib.h>
+	"a_head.h"
+
+1511640617 d:\biancheng\programming\try\numbers_recognition\a_head.h
+
+1511640745 source:d:\biancheng\programming\try\numbers_recognition\read_a_single_file.c
+	<stdio.h>
+	<stdlib.h>
+	"a_head.h"
+	<strings.h>
+
+1511639195 source:d:\biancheng\programming\try\numbers_recognition\cal_distance.c
+	<stdio.h>
+	<stdlib.h>
+	"a_head.h"
+
+1511674774 source:d:\biancheng\programming\try\numbers_recognition\knn.c
+	<stdio.h>
+	<stdlib.h>
+	"a_head.h"
+
+1511640165 source:d:\biancheng\programming\try\numbers_recognition\read__text.c
+	<io.h>
+	<stdio.h>
+	<string.h>
+	"a_head.h"
+
