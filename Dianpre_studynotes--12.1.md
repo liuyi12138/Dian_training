@@ -13,7 +13,7 @@ _ _ _
 在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 # 号即可。
 有多少个#即为几级标题。
 
-![markdown.1.jpg](D:\Dian_training\picture\markdown.1.jpg)
+![markdown.1.jpg](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/picture/markdown.1.jpg)
 
 **TIPS : 在Git中 ‘#’ 后需加上空格**
 
@@ -26,7 +26,7 @@ _ _ _
   - 3
 
 
-![markdown.2.jpg](D:\Dian_training\picture\markdown.2.jpg)
+![markdown.2.jpg](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/picture/markdown.2.jpg)
 
 **Tips ： ‘-‘和’*‘在同一个无序列表可以混用**
 **TIPS ： 空一格风味更佳哦**
@@ -69,7 +69,7 @@ _ _ _
 在两组 ``` 之间的文本被识别为代码
 两个 ` 之间被识别为行内代码
 
-** TIPS : 在第一组```后面加上某些字符会有特效哦 比如 cpp Python 而且加上markdown是万能的呢 **
+**TIPS : 在第一组```后面加上某些字符会有特效哦 比如 cpp Python 而且加上markdown是万能的呢**
 
 ```cpp
  # include<stdio.h>
@@ -88,7 +88,7 @@ _ _ _
 |   Tip 2       |    1.2            |   2.2            |    2.3              |
 |   Tip 3       |    1.3            |   3.2            |    3.3              |
 
-** TIPS ：你还可以使用 : 指定列的对齐方式。 **
+**TIPS ：你还可以使用 : 指定列的对齐方式。**
 
 ```markdown
 |               | Title 1(居中对齐)  | Title 2 （右对齐） |  Title 3 （左对齐）  |
