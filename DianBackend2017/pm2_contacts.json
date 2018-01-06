@@ -1,0 +1,14 @@
+{
+  "name": "dian_contacts_dev",
+  "script": "./bin/www",
+  "cwd": "./",
+  "error_file": "./logs/pm2/dian_contacts-err.log",
+  "out_file": "./logs/pm2/dian_contacts-out.log",
+  "log_date_format" : "MM-DD HH:mm:ss.SSS Z",
+  "instances": "1",
+  "merge_logs": true,
+  "exec_mode": "cluster_mode",
+  "env": {
+    "PORT": 3000
+  }
+}
