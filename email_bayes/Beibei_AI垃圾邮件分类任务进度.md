@@ -26,7 +26,7 @@
 
 
 #### 4.结果分析
-![result1](.Beibei_AI/homework/ly/task2/email_bayes_result1.png)
+![result1](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result1.png)
 **FN与FP数量相当，但错误率仍较高，分类不够理想，从数据处理方面入手**
 
 #### 5.抽样检测
