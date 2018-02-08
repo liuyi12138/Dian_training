@@ -26,11 +26,10 @@
 
 
 #### 4.结果分析
-<<<<<<< HEAD
-![result1](.Beibei_AI/homework/ly/task2/email_bayes_result1.png)
-=======
+
 ![result1](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result1.png)
->>>>>>> bd2f9f95255a59f6a5dc4d176cdb9527f6beeb80
+
+
 **FN与FP数量相当，但错误率仍较高，分类不够理想，从数据处理方面入手**
 
 #### 5.抽样检测
@@ -51,7 +50,7 @@
 + 继续玄学调参
 
 #### 6.结果分析
-![result2](.Beibei_AI/homework/ly/task2/email_bayes_result2.png)
+![result2](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result2.png)
 **不做停用词筛选果然准确率++，今晚再做一波优化就去做下一个任务了**
 
 #### 7.抽样检测
@@ -62,10 +61,10 @@
 **目前正在准备数据集，这一次不改动数据集就可以保存了，等数据集出来后就在全部数据的基础上进行玄学调参，如果效果好，就宣布任务完成了，给自己立个flag 准确率0.995+,召回率0.95+.按道理数据多起来后权数应该不能超过２，不然召回率会大幅减少，最后还得看结果**
 
 #### 8.结果分析
-![result3](.Beibei_AI/homework/ly/task2/email_bayes_result3.png)
+![result3](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result3.png)
 **准确率和召回率都有所上升，目前将出现300次以上的数据增多100倍，接下来尝试1000倍**
-![result4](.Beibei_AI/homework/ly/task2/email_bayes_result4.png)
-![result5](.Beibei_AI/homework/ly/task2/email_bayes_result5.png)
+![result4](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result4.png)
+![result5](https://raw.githubusercontent.com/liuyi12138/Dian_training/master/email_bayes/email_bayes_result5.png)
 **准确率恢复result2水准???奇奇怪怪，感觉加权对其影响不大了，下一步检查拼写再加加权吧**
 
 #### 9.抽样检测
