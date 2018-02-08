@@ -29,18 +29,22 @@ def createVocabList(dataSet): #创建词汇表
         vocabSet = vocabSet | set(document) #通过并集操作将数据传入set，并且这是一个无重复集合
     return list(vocabSet)
 
-def bagOfword(vocabSet,inputSet): #vocabSet词汇表，inputSet输入文档
+def bagOfword(vocabSet,inputSet,lajiwords): #vocabSet词汇表，inputSet输入文档
     returnVec=[0]*len(vocabSet) #创建0向量
     for word in inputSet:
         if word in vocabSet:
             returnVec[vocabSet.index(word)] += 1
+    for word in vocabSet:
+        if returnVec[vocabSet.index(word)]>10:
+            returnVec[vocabSet.index(word)]*=1.2
     return returnVec #返回词汇频率信息
 
 def get_email():
-    docList_train=[]; classList_train=[];docList_test=[];classList_test=[] #docList为词汇集 classList为标签集
+    docList_train=[]; classList_train=[];docList_test=[];classList_test=[];lajiwords=[]#docList为词汇集 classList为标签集
     for parent,dir_names,file_names in os.walk(path_train_ham):
         for file_name in file_names:
             docList_train.append(email_spilt(open(path_train_ham+file_name).read()))
+            lajiwords.append(email_spilt(open(path_train_ham+file_name).read()))
             classList_train.append(1)
     for parent,dir_names,file_names in os.walk(path_train_spam):
         for file_name in file_names:
@@ -54,7 +58,7 @@ def get_email():
         for file_name in file_names:
             docList_test.append(email_spilt(open(path_test_spam+file_name).read()))
             classList_test.append(0)
-    return docList_train,classList_train,docList_test,classList_test
+    return docList_train,classList_train,docList_test,classList_test,lajiwords
 
 def train_bayes(trainMatrix,trainCategory): #trainMatrix文档矩阵 trainCategory标签向量
     numTrainDocs = len(trainMatrix)
@@ -83,11 +87,11 @@ def judge_email(vec2Classify,p0Vec,p1Vec,pClass1):
         return 0
 
 def testing_bayes():
-    docList_train,classList_train,docList_test,classList_test=get_email()
+    docList_train,classList_train,docList_test,classList_test,lajiwords=get_email()
     vocabList = createVocabList(docList_train)#词汇表vocabList
     trainMat=[]
     for postinDoc in docList_train:
-        trainMat.append(bagOfword(vocabList,postinDoc))
+        trainMat.append(bagOfword(vocabList,postinDoc,lajiwords))
     p0V,p1V,pAb=train_bayes(trainMat,classList_train)
     TP=0;FP=0;FN=0;TN=0
     for i in range(len(docList_test)):
